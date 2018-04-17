@@ -54,6 +54,16 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code,
 .et_pb_row .et_pb_column.et-last-child, .et_pb_row .et_pb_column:last-child, .et_pb_row_inner .et_pb_column.et-last-child, .et_pb_row_inner .et_pb_column:last-child {
     margin-right: 0!important; 
 }
+p{padding-bottom: 1em;}
+p:first-child {
+    margin-top: 0;
+}
+.ui.vertical.stripe p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+
 @media (min-width: 981px)
 .et_pb_gutters3 .et_pb_column, .et_pb_gutters3.et_pb_row .et_pb_column {
     margin-right: 5.5%;
