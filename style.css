@@ -32,7 +32,7 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code,
 }
 
 .et_pb_row .et_pb_column.et-last-child, .et_pb_row .et_pb_column:last-child, .et_pb_row_inner .et_pb_column.et-last-child, .et_pb_row_inner .et_pb_column:last-child {
-    margin-right: 0!important;
+    margin-right: 0!important; 
 }
 
 
