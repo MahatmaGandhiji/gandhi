@@ -236,8 +236,98 @@ button, select {
 }
 #innerparticles1{ height:1038px;}
 
+.ui.column.grid>[class*="five wide"].column, .ui.grid>.column.row>[class*="five wide"].column, .ui.grid>.row>[class*="five wide"].column, .ui.grid>[class*="five wide"].column {
+    width: 31.25%!important;
+}
+
+.ui.grid>.row>[class*="center aligned"].column.column, .ui.grid>[class*="center aligned"].column.column, .ui.grid>[class*="center aligned"].row>.column, .ui[class*="center aligned"].grid>.column, .ui[class*="center aligned"].grid>.row>.column {
+    text-align: center;
+    -ms-flex-item-align: inherit;
+    align-self: inherit;
+}
+#buy-panel .inner {
+    padding: 1em;
+}
+#buy-panel {
+    background: #fff;
+    border-radius: 15px 0px 0px 15px;
+    color: #000;
+}
+
+.spinning-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+    margin: 2em 0 2em 0;
+}
+
+#currency-selector select {
+    padding: 0.4em 1em;
+    margin-left: 1em;
+}
+.ui.column.grid>[class*="eleven wide"].column, .ui.grid>.column.row>[class*="eleven wide"].column, .ui.grid>.row>[class*="eleven wide"].column, .ui.grid>[class*="eleven wide"].column {
+    width: 68.75%!important;
+}
+#value-panel {
+    background: #fff;
+    color: #000;
+    border-radius: 0px 15px 15px 0px;
+}
 
 
+
+.ui.relaxed.grid {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+#value-panel .grid {
+    padding: 1em;
+}
+
+
+.ui.column.grid>[class*="eight wide"].column, .ui.grid>.column.row>[class*="eight wide"].column, .ui.grid>.row>[class*="eight wide"].column, .ui.grid>[class*="eight wide"].column {
+    width: 50%!important;
+}
+.ui.grid>.relaxed.row>.column, .ui.relaxed.grid>.column:not(.row), .ui.relaxed.grid>.row>.column {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.price-box {
+    text-align: center;
+    height: 132px;
+}
+.price-box, #transaction-history-container, .login-box, .announcement-box {
+    padding: 1.8em;
+    background: #404040;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #0000001a;
+}
+.price-box .title, .login-box .title {
+    color: #bc8e4c !important;
+    font-size: 1.2em;
+}
+.price-box .value, .login-box .value {
+    color: #FFFFFF;
+    font-size: 2em;
+    font-weight: 700;
+    transition: color 0.5s ease;
+    margin: 0.5em 0 0.3em 0;
+}
+.price-box .value-usd, .login-box .value-usd {
+    color: #b7b7b7;
+}
+
+
+@media (max-width: 1399px) and (min-width: 981px)
+.price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
+    padding: 1.2em !important;
+}
+price-box .title, .login-box .title {
+    color: #bc8e4c !important;
+    font-size: 1.2em;
+}
 
 
 
