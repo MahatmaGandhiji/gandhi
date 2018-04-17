@@ -11,6 +11,38 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code,
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+.container {
+    position: relative;
+    text-align: left;
+}
+.ui.container {
+    display: block;
+    max-width: 100%!important;
+}
+.ui.vertical.stripe {
+    padding: 3em 0em;
+}
+#token-sale .heading-container {
+    text-align: center;
+}
+#token-sale {
+    /* margin-bottom: 30px; */
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
 .et_pb_column {
     float: left;
     position: relative;
@@ -33,6 +65,12 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code,
 @media only screen and (min-width: 1350px)
 .et_pb_row {
     padding: 27px 0px;
+}
+@media only screen and (min-width: 1200px)
+.ui.container {
+    width: 1127px;
+    margin-left: auto!important;
+    margin-right: auto!important;
 }
 
 
