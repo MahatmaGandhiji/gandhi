@@ -642,21 +642,14 @@ width"].row>.column, .ui[class*="equal width"].grid>.column:not(.row), .ui[class
 
 
 @media (max-width: 1399px) and (min-width: 981px)
+    {
 .price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
     padding: 1.2em !important;
 }
 .price-box .value, .login-box .value {
     font-size: 1.5em !important;
 }
-
-
-
-
-
-
-
-
-
+}
 
 @media (min-width: 981px)
 .et_pb_gutters3 .et_pb_column, .et_pb_gutters3.et_pb_row .et_pb_column {
