@@ -583,7 +583,10 @@ svg:not(:root) {
     color: #b7b7b7;
 }
 
-
+.price-box {
+    text-align: center;
+    height: 132px;
+}
 
 
 
