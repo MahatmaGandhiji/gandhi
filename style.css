@@ -318,7 +318,204 @@ button, select {
 .price-box .value-usd, .login-box .value-usd {
     color: #b7b7b7;
 }
+input {
+    -webkit-appearance: none;
+}
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button, input {
+    overflow: visible;
+}
 
+#address-balance {
+    font-size: 0.9em;
+    color: #3a3aff;
+    margin-top: 0.5em;
+}
+#meta-mask-ui.logged-out .when-logged-in {
+    display: none;
+}
+
+#meta-mask-ui.logged-out .when-logged-in {
+    display: none;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+.ui.button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #e0e1e2 none;
+    color: rgba(0,0,0,.6);
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin: 0 .25em 0 0;
+    padding: .78571429em 1.5em .78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+    transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+    transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+    transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+}
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+    font-size: 1rem;
+}
+.ui.button {
+    font-size: 1.1em;
+    border-radius: 30px;
+    border: 2px solid;
+    text-shadow: none;
+}
+.ui.huge.button, .ui.huge.buttons .button, .ui.huge.buttons .or {
+    font-size: 1.42857143rem;
+}
+.ui.primary.button, .ui.primary.buttons .button {
+    background-color: #2185d0;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+}
+.ui.primary.button {
+    -webkit-box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+}
+.ui.primary.button {
+    color: #fff;
+    background: #004812 none;
+}
+#buy-tokens {
+    width: 100%;
+    display: block;
+    margin: 0.5em 0 2em 0;
+    border-radius: 0px;
+}
+#currency-selector {
+    margin: 2em 0 2em 0;
+}
+#currency-selector select {
+    padding: 0.4em 1em;
+    margin-left: 1em;
+}
+#meta-mask-ui.logged-out .when-logged-in {
+    display: none;
+}
+#meta-mask-ui.wallet-mm .when-wallet-web {
+    display: none;
+}
+.ui.column.grid>[class*="eleven wide"].column, .ui.grid>.column.row>[class*="eleven wide"].column, .ui.grid>.row>[class*="eleven wide"].column, .ui.grid>[class*="eleven wide"].column {
+    width: 68.75%!important;
+}
+#value-panel {
+    background: #fff;
+    color: #000;
+    border-radius: 0px 15px 15px 0px;
+}
+.ui.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0;
+}
+.ui.grid {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.ui.relaxed.grid {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+value-panel .grid {
+    padding: 1em;
+}
+.ui.grid>* {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+    position: relative;
+    display: inline-block;
+    width: 6.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+}
+.ui.grid>.column:not(.row) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.ui.column.grid>[class*="eight wide"].column, .ui.grid>.column.row>[class*="eight wide"].column, .ui.grid>.row>[class*="eight wide"].column, .ui.grid>[class*="eight wide"].column {
+    width: 50%!important;
+}
+.ui.grid>.relaxed.row>.column, .ui.relaxed.grid>.column:not(.row), .ui.relaxed.grid>.row>.column {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1399px) and (min-width: 981px)
+.ui.button {
+    padding: 14px 15px !important;
+}
+
+
+
+.input-amount {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    background: #FF9933;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+#meta-mask-ui.logged-out .when-logged-in {
+    display: none;
+}
 
 @media (max-width: 1399px) and (min-width: 981px)
 .price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
