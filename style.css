@@ -268,7 +268,7 @@ button, select {
     margin-left: 1em;
 }
 .ui.column.grid>[class*="eleven wide"].column, .ui.grid>.column.row>[class*="eleven wide"].column, .ui.grid>.row>[class*="eleven wide"].column, .ui.grid>[class*="eleven wide"].column {
-    width: 63.75%!important;
+    width: 62.75%!important;
 }
 #value-panel {
     background: #fff;
