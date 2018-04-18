@@ -425,9 +425,6 @@ button, input {
 #meta-mask-ui.wallet-mm .when-wallet-web {
     display: none;
 }
-.ui.column.grid>[class*="eleven wide"].column, .ui.grid>.column.row>[class*="eleven wide"].column, .ui.grid>.row>[class*="eleven wide"].column, .ui.grid>[class*="eleven wide"].column {
-    width: 63.75%!important;
-}
 #value-panel {
     background: #fff;
     color: #000;
