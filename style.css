@@ -447,6 +447,15 @@ button, input {
     align-items: stretch;
     padding: 0;
 }
+.login-options p {
+    font-size: 0.9em;
+    margin-top: 1em;
+    color: #cccccc;
+}
+#unlock-wallet-container {
+    display: none;
+}
+
 .ui.grid {
     margin-top: -1rem;
     margin-bottom: -1rem;
@@ -483,10 +492,95 @@ value-panel .grid {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+.ui.large.button, .ui.large.buttons .button, .ui.large.buttons .or {
+    font-size: 1.14285714rem;
+}
+.ui.secondary.button, .ui.secondary.buttons .button {
+    background-color: #1b1c1d;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+}
+.ui.secondary.button {
+    -webkit-box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+    box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
+}
+.ui.large.button, .ui.large.buttons .button, .ui.large.buttons .or {
+    font-size: 1.14285714rem;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+#eth-address-container {
+    text-align: center;
+}
+#meta-mask-ui.logged-out .when-logged-in {
+    display: none;
+}
+.ui.dimmer {
+    display: none;
+    position: absolute;
+    top: 0!important;
+    left: 0!important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.85);
+    opacity: 0;
+    line-height: 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-transition: background-color .5s linear;
+    transition: background-color .5s linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    will-change: opacity;
+    z-index: 1000;
+}
+.ui.dimmer {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.hidden.transition {
+    display: none;
+    visibility: hidden;
+}
 
 
 
 
+
+
+
+#meta-mask-ui.logged-out .when-logged-in {
+    display: none;
+}
+.ui.column.grid>[class*="sixteen wide"].column, .ui.grid>.column.row>[class*="sixteen wide"].column, .ui.grid>.row>[class*="sixteen wide"].column, .ui.grid>[class*="sixteen wide"].column {
+    width: 100%!important;
+}
+.price-box .value-usd, .login-box .value-usd {
+    color: #b7b7b7;
+}
 
 
 
@@ -516,15 +610,41 @@ value-panel .grid {
 #meta-mask-ui.logged-out .when-logged-in {
     display: none;
 }
-
-@media (max-width: 1399px) and (min-width: 981px)
-.price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
-    padding: 1.2em !important;
+.login-box {
+    text-align: center;
+}
+.price-box, #transaction-history-container, .login-box, .announcement-box {
+    padding: 1.8em;
+    background: #404040;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #0000001a;
+}
+.price-box.green, .login-box.green {
+    background: #3e596b;
 }
 price-box .title, .login-box .title {
     color: #bc8e4c !important;
     font-size: 1.2em;
 }
+
+
+width"].row>.column, .ui[class*="equal width"].grid>.column:not(.row), .ui[class*="equal width"].grid>.row>.column {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 1399px) and (min-width: 981px)
+.price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
+    padding: 1.2em !important;
+}
+
+
+
+
+
 
 
 
