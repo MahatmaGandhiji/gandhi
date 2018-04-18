@@ -636,9 +636,13 @@ width"].row>.column, .ui[class*="equal width"].grid>.column:not(.row), .ui[class
 }
 
 
+
 @media (max-width: 1399px) and (min-width: 981px)
 .price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
     padding: 1.2em !important;
+}
+.price-box .value, .login-box .value {
+    font-size: 1.5em !important;
 }
 
 
