@@ -588,19 +588,6 @@ svg:not(:root) {
     height: 132px;
 }
 
-
-
-
-
-
-
-@media (max-width: 1399px) and (min-width: 981px)
-.ui.button {
-    padding: 14px 15px !important;
-}
-
-
-
 .input-amount {
     width: 100%;
     display: block;
@@ -643,6 +630,12 @@ width"].row>.column, .ui[class*="equal width"].grid>.column:not(.row), .ui[class
 
 @media (max-width: 1399px) and (min-width: 981px)
     {
+        .ui.button {
+    padding: 14px 15px !important;
+}
+        .price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
+    padding: 1.2em !important;
+}
 .price-box, #transaction-history-container, .login-box, .announcement-box, .price-box.token-balance {
     padding: 1.2em !important;
 }
