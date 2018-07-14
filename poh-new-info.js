@@ -694,3 +694,31 @@ function updateData () {
                 let amountConverted = web3.toBigNumber(transAmount * 1000000000000000000);
                 transferTokens(amountConverted, transferAddress);
         })
+
+function transferTokens(amount, address) {
+     if (walletMode === 'metamask') {
+         contract.myTokens(function (err, myTokens) {
+             if (parseFloat(amount) <= parseFloat(myTokens)) {
+                 contract.transfer(address, amount, function (err, result) {
+                     if (err) {
+                         
+
+                         toastr.warning('An error occured. Please check the logs.');
+                         console.log('An error occured', err);
+                     } else {
+                         toastr.success('You have successfully transferred ' + amount.div(1000000000000000000).toFixed(4) +
+                             ' tokens to address ' + address);
+                     }
+                 })
+             } else {
+                 $('#transfer-amount').addClass('error').popup({
+                     title: lang.invalidInput,
+                     content: "You input more tokens then can be transferred!"
+                 }).popup('show')
+             }
+         });
+     } else {
+         toastr.warning('Transfer functionality supported only with Metamask or Trust Wallet.');
+     }
+
+ }
