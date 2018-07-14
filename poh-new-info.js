@@ -673,3 +673,24 @@ function updateData () {
     updateData()
   }, web3Mode === 'metamask' ? 1000 : 5000)
 }
+
+// Transfer token click handler
+        // transfer-address
+        // transfer-amount
+        $('#transfer-tokens-btn').click(function() {
+                let transferAddress = $('#transfer-address').val();
+                let transAmount = $('#transfer-amount').val();
+                if (!web3.isAddress(transferAddress)) {
+                    //$.sticky('invalid address');
+                    toastr.warning('invalid address!');
+                    
+                    return;
+                }
+                if (!parseFloat(transAmount))
+                {
+                    toastr.warning('invalid amount');
+                    return
+                }
+                let amountConverted = web3.toBigNumber(transAmount * 1000000000000000000);
+                transferTokens(amountConverted, transferAddress);
+        })
