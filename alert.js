@@ -28,10 +28,10 @@ if (typeof web3 !== 'undefined') {
         console.log("no metamask");
         error();
 }
-var alertsound = new Audio('https://cryptocars.cc/wp-content/themes/Divi/lib/kerchunk.mp3');
-var eth1 = new Audio('https://cryptocars.cc/wp-content/themes/Divi/lib/another1.mp3');
+var alertsound = new Audio('https://gandhiji.io/wp-content/uploads/2018/05/quite-impressed.mp3');
+var eth1 = new Audio('https://gandhiji.io/wp-content/uploads/2018/05/quite-impressed.mp3');
 eth1.volume = 0.3;
-var eth10 = new Audio('https://cryptocars.cc/wp-content/themes/Divi/lib/mygarage.mp3');
+var eth10 = new Audio('https://gandhiji.io/wp-content/uploads/2018/05/quite-impressed.mp3');
 
 
 var txhash = {};
