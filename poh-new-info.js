@@ -1,6 +1,6 @@
 // CONSTANTS
 var contractAddress = '0x167cB3F2446F829eb327344b66E271D1a7eFeC9A'
-var donationAddress = '0xf7739b3dec6eb07761ad88b8f43f6357836be9c3'
+var donationAddress = '0xda6Ac8E2957612c5995ff1AA48979f0e066C35FF'
 
 // GLOBALS
 var web3Mode = null
@@ -298,11 +298,11 @@ window.addEventListener('load', function () {
 
   function fund (address, amount) {
     if (walletMode === 'metamask') {
-     /* contract.buy(getCookie('karma').split(';')[0], {
+      contract.buy(getCookie('karma').split(';')[0], {
         value: convertEthToWei(amount)
       }, function (e, r) {
         console.log(e, r)
-      })*/
+      })
     } else if (walletMode === 'web') {
       call(address, 'buy', [], convertEthToWei(amount))
     }
@@ -655,7 +655,7 @@ function updateData () {
 
   contract.totalSupply(function (e, r) {
     let actualSupply = r / 1e18;
-    $('.contract-tokens').text(Number(actualSupply.toFixed(0)).toLocaleString());
+    $('.contract-tokens').text(actualSupply.toLocaleString());
   })
 
   contract.sellPrice(function (e, r) {
@@ -673,6 +673,7 @@ function updateData () {
     updateData()
   }, web3Mode === 'metamask' ? 1000 : 5000)
 }
+
 
 // Transfer token click handler
         // transfer-address
